@@ -92,6 +92,7 @@ section:nth-child(even) {
 .section__title {
     margin-bottom: 20px;
 }
+
 /* Navigation Bar */
 
 nav {
@@ -167,6 +168,7 @@ nav {
     animation: animate-profile-pic 800ms 200ms backwards;
 }
 
+/* The profile pic pops in before being stagnant*/
 @keyframes animate-profile-pic {
     0% {
         transform: scale(0);
@@ -182,7 +184,7 @@ nav {
 .about-me__picture {
     width: 100%;
 
-    /* Improving my picture */
+/* Improving my picture */
 transform: scale(1.5);
 padding-top: 8px;
 }
@@ -194,7 +196,7 @@ padding-top: 8px;
 
 .about-me__info--para {
     font-size: 20px;
-    margin-bottom: 28px;
+    margin-bottom: 12px;
     animation: fade-up 650ms 600ms backwards;
 
 }
@@ -207,10 +209,32 @@ padding-top: 8px;
 }
 
 .about-me__links {
+    margin-bottom: 16px;
     animation: fade-up 650ms 800ms backwards;
 
 }
 
+.about__link--anchor {
+    margin: 0 12px;
+    color: #242424;
+    font-weight: 700;
+    animation: fade-up 650ms 1000ms backwards;
+}
+
+.about__link--anchor-primary {
+    
+    background-color: #6030b1;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: whitesmoke;
+    transition: all 300sm ease;
+}
+
+.about__link--anchor-primary:hover {
+    background-color: #5d3eff
+}
+
+/* The fade-up animation allows for certain items to look like they are fading up into view*/
 @keyframes fade-up {
     0% {
         opacity: 0;
@@ -223,6 +247,7 @@ padding-top: 8px;
 }
 
 .about-me__img--container {
+    margin-top: 36px;
     flex: 1;
     display: flex;
     align-items: center;
@@ -230,9 +255,10 @@ padding-top: 8px;
 
 .about-me__img {
     width: 100%;
-    animation: fade-in 1200ms 800ms backwards;
+    animation: fade-in 1200ms 1200ms backwards;
 }
 
+/* The fade-up animation allows for certain items to look like they are fading into view*/
 @keyframes fade-in{
     0% {
         opacity: 0;
@@ -247,6 +273,7 @@ padding-top: 8px;
     animation: animate-wave 500ms infinite ease-in-out;
 }
 
+/* This is for animating the wave emoji to make it look like it is waving at you*/
 @keyframes animate-wave {
     0% {
         transform: rotate(0);
@@ -450,7 +477,7 @@ footer {
     opacity: 1;
 }
 
-/* For small phones, tablets, and large smartphones */
+/* For tablets and large smartphones */
 @media (max-width: 768px) {
     nav {
         height: 68px;
