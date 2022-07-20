@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--Welcome to the About Me page! I hope you enjoy your time here. If you have any questions about me or my website you can contact my Email by clicking on the contact button at the top right of the page-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--This is the about me section which includes my name at the top, the menu items, the picture of me, and more about me-->
+    <section id="about-me">
+        <nav>
+            <a href="index.html" class="personal__logo">Chris Tomaskovic</a>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <!--The # brings the user to that section of the page-->
+                    <a href="index.html#languages" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Languages</a>
+                </li>
+                <li class="nav__link">
+                    <a href="index.html#projects" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Projects</a>
+                </li>
+                <li class="nav__link">
+                    <!--The mailto: opens up the primary Email of the user computer and already has my email, CHRTOMAS@UAT.edu, as the reciever-->
+                    <a href="mailto:CHRTOMAS@UAT.edu" class="
+                    nav__link--anchor
+                    nav__link--anchor-primary
+                    ">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="flex flex-1">
+            <div class="about-me__info row">
+                <div class="about-me__info--container">
+                    <figure class="about-me__picture--mask">
+                        <img src="./assets/me.jpg" class="about-me__picture" alt="Picture of me!">
+                    </figure>
+                    <h1 class="about-me__info--title">
+                        My <strong class="text--purple">SIP</strong>!
+                    </h1>
+                    <img src="./assets/Alexander_AI_SIP.png" class="project__img" alt="Project example">
+                    <p class="about-me__info--para">
+                        <br>
+                        <h2 class="about-me__info--title">
+                            Project <strong class="text--purple">Description</strong>
+                        </h2>
+
+                        I am proposing to create a stock and crypto trader that is dictated by AI to produce the most efficient 
+                        net gain. This project aims to create an AI that can predict an assets future and issue buy and sell 
+                        orders based off social and market cues. It will make stock market trading easier for both beginners 
+                        and experts. You could also use it as an assistant or to do all the work for you.
+
+
+                        <br>
+                        <br>
+                        <br>
+
+                        <h2 class="about-me__info--title">
+                            Innovation <strong class="text--purple">Claim</strong>
+                        </h2>
+
+                        This project is innovative because it incorporates an AI web crawler into a stock prediction program 
+                        that I will create myself.
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--This is the footer of the page-->
+    <footer>
+        <div class="row footer__row">
+            <!--Brings the user back to the home page if clicked-->
+            <a href="index.html#" class="footer__anchor">
+                <figure class="footer__logo">
+                    <img src="./assets/my_logo.png" class="footer__logo--img" alt="My logo">
+                </figure>
+                <span class="footer__logo--popper">
+                    Home
+                </span>
+            </a>
+            <div class="footer__social--list">
+                <a href="https://www.github.com/Pointshock" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                " target="_blank">GitHub</a>
+                <a href="mailto:CHRTOMAS@UAT.edu" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                " target="_blank">Email</a>
+            </div>
+            <!--This website isn't actually copyright but it adds a nice touch-->
+            <div class="footer__copyright">Copyright © 2021 Chris Tomaskovic</div>
+        </div>
+    </footer>
+</body>
+
+</html>
