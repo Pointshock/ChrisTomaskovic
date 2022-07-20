@@ -158,6 +158,17 @@ nav {
     text-align: center;
 }
 
+/* Style elements for the objectives page*/
+.objectives__info--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
 .about-me__picture--mask {
     width: 100px;
     height: 100px;
