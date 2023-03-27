@@ -196,8 +196,9 @@ nav {
     width: 100%;
 
 /* Improving my picture */
-transform: scale(1.5);
-padding-top: 8px;
+transform: scale(1.55);
+padding-top: 2px;
+padding-right: 8px;
 }
 
 .about-me__info--title {
