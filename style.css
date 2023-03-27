@@ -89,6 +89,14 @@ section:nth-child(even) {
     background-color: #ececec;
 }
 
+h2:nth-child(even) {
+    background-color: lightgrey;
+}
+
+h2:nth-child(odd) {
+    background-color: lightgrey;
+}
+
 .section__title {
     margin-bottom: 20px;
 }
