@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <!--Welcome to the Project 3 page! I hope you enjoy your time here. If you have any questions about me or my website you can contact my Email by clicking on the contact button at the top right of the page-->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 3</title>
+    <title>Fire Detection</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!--This is the about me section which includes my name at the top, the menu items, an image of the project, and a description about it-->
     <section id="about-me">
@@ -30,30 +33,53 @@
                     ">Projects</a>
                 </li>
                 <li class="nav__link">
-                    <!--The mailto: opens up the primary Email of the user computer and already has my email, CHRTOMAS@UAT.edu, as the reciever-->
-                    <a href="mailto:CHRTOMAS@UAT.edu" class="
+                    <!--The mailto: opens up the primary Email of the user computer and already has my email as the reciever-->
+                    <a href="mailto:christomaskovic9@gmail.com" class="
                     nav__link--anchor
                     nav__link--anchor-primary
                     ">Contact</a>
                 </li>
             </ul>
         </nav>
-        <img src="./assets/project_example.svg" class="project__img" alt="Project example">
+
         <br>
         <div class="flex flex-1">
             <div class="about-me__info row">
                 <div class="about-me__info--container">
+                    <img src="./assets/val_batch1_pred.jpg" class="project__about__img" alt="Project example">
+                    <br>
+                    <br>
                     <h1 class="about-me__info--title">
-                        More about this <strong class="text--purple">project</strong>
+                        More about <strong class="text--purple">Fire Detection</strong>
                     </h1>
                     <p class="about-me__info--para">
                         <br>
-                        
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Sed diam leo, scelerisque sed odio eget, luctus faucibus augue. Fusce volutpat
-                        iaculis dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                        id eleifend libero. In hac habitasse platea dictumst.
+
+                        I originally created this project with Anthony Shank to submit to the Machine Learning
+                        competition at UAT.
+                        We won first place which inspired me to continue working on the project. I have since improved
+                        the accuracy of the model as well
+                        as optimized the code to run faster. The picture above is a prediction of the model on a batch
+                        of images. The model displays a confidence score
+                        on a scale of 0 to 1. The closer the score is to 1 the more confident the model is that the
+                        image contains fire. This data was custom labeled using Roboflow and programmed in Python.
                     </p>
+                    <br>
+                    <br>
+                    <img src="./assets/FireTest.png" class="project__about__img__alt" alt="Project example">
+                    <p class="about-me__info--para">
+                        <br>
+                        <br>
+                        Below is a video of the model in action. The model is running on an AMD Ryzen 9 7900X processor
+                        and is connected to a webcam. The model is able to detect fire in real time.
+                        <br>
+                        <br>
+                    </p>
+                        <iframe width="50%" src="https://www.youtube.com/embed/nr0QaMa001I?"></iframe>
+                        <a href="https://github.com/Pointshock/Fire-Detection" target="_blank" class="about-me__link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    <br>
                 </div>
             </div>
         </div>
@@ -76,15 +102,16 @@
                 link__hover-effect
                 link__hover-effect--white
                 " target="_blank">GitHub</a>
-                <a href="mailto:CHRTOMAS@UAT.edu" class="
+                <a href="mailto:christomaskovic9@gmail.com" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
                 " target="_blank">Email</a>
             </div>
             <!--This website isn't actually copyright but it adds a nice touch-->
-            <div class="footer__copyright">Copyright © 2023 Chris Tomaskovic All Rights Reserved</div>
+            <div class="footer__copyright">Copyright © 2023 Chris Tomaskovic</div>
         </div>
     </footer>
 </body>
+
 </html>
