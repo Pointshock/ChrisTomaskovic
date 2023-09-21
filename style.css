@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 * {
     font-family: 'Noto Sans', sans-serif;
     padding: 0;
@@ -10,7 +11,13 @@ html {
     scroll-behavior: smooth 1s;
 }
 
-h1, h2, h3, h4, h5, h6, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
     color: #242424;
     text-align: center;
     line-height: 1.25;
@@ -62,7 +69,7 @@ li {
     list-style-type: none;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
@@ -143,6 +150,33 @@ nav {
     font-weight: bold;
 }
 
+/* Photo Gallery */
+
+#gallery {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+}
+
+#image-track>.image {
+    width: 38vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(0%, -50%);
+    user-select: none; /* -- Prevent image highlighting -- */
+}
+
 /* About Me */
 
 #about-me {
@@ -187,14 +221,36 @@ nav {
     animation: animate-profile-pic 800ms 200ms backwards;
 }
 
+.about-project__picture--mask {
+    margin-bottom: 28px;
+    animation: animate-project-pic 800ms 200ms backwards;
+}
+
+
 /* The profile pic pops in before being stagnant*/
 @keyframes animate-profile-pic {
     0% {
         transform: scale(0);
     }
+
     80% {
         transform: scale(1.1);
     }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animate-project-pic {
+    0% {
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
     100% {
         transform: scale(1);
     }
@@ -203,10 +259,10 @@ nav {
 .about-me__picture {
     width: 100%;
 
-/* Improving my picture */
-transform: scale(1.55);
-padding-top: 2px;
-padding-right: 8px;
+    /* Improving my picture */
+    transform: scale(1.55);
+    padding-top: 2px;
+    padding-right: 8px;
 }
 
 .about-me__info--title {
@@ -249,7 +305,7 @@ padding-right: 8px;
 }
 
 .about__link--anchor-primary {
-    
+
     background-color: #6030b1;
     padding: 8px 20px;
     border-radius: 50px;
@@ -267,6 +323,7 @@ padding-right: 8px;
         opacity: 0;
         transform: translateY(40px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -286,10 +343,11 @@ padding-right: 8px;
 }
 
 /* The fade-up animation allows for certain items to look like they are fading into view*/
-@keyframes fade-in{
+@keyframes fade-in {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -305,9 +363,11 @@ padding-right: 8px;
     0% {
         transform: rotate(0);
     }
+
     50% {
         transform: rotate(30deg);
     }
+
     100% {
         transform: rotate(0);
     }
@@ -397,7 +457,7 @@ padding-right: 8px;
 
 .project__about__img__alt {
     display: flex;
-    width: 50%;
+    width: 45%;
     height: 60%;
     justify-content: center;
     align-items: center;
@@ -430,7 +490,8 @@ padding-right: 8px;
     opacity: 0.7;
 }
 
-.project:hover .project__img, .project:hover .project__img__alt {
+.project:hover .project__img,
+.project:hover .project__img__alt {
     transform: scale(1.07);
     filter: blur(5px);
 }
@@ -527,7 +588,7 @@ footer {
     position: relative;
 }
 
-.footer__anchor:hover .footer__logo--popper{
+.footer__anchor:hover .footer__logo--popper {
     transform: translateX(60px);
     opacity: 1;
 }
